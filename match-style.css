@@ -1,0 +1,311 @@
+/* ----------utilities start------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* -----------utilities End--------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1300px;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+/*------- Banner Area Start  -------*/
+.banner-area{
+    display: flex;
+    background-color: #161616;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.banner-info{ 
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+     margin-left: 100px;
+    
+}
+
+.banner-info h1, h5{
+  color:#FFFFFF ;
+}
+.banner-info .button-area button{
+    background-color: #FF7354;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 15px 40px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.banner-info .button-area button:hover{
+    background: linear-gradient(to left, #DD0000 50%, #DD0000 50%) right;
+    transition: 0.2s ease-out;
+}
+.banner-info .button-area button i{
+    margin-left: 5px;
+}
+
+.banner-title{
+    font-size: 55px;
+}
+.banner-article{
+    font-weight: 200;
+    font-size: 15px;
+}
+.banner-image{
+    width: 50%;
+   
+}
+.banner-image img{
+    height: 550px;
+    margin-top: 50px;
+    margin-bottom: -6px;
+}
+/*---------- Banner Area End  ----------*/
+
+/* --------Match Section Start--------- */
+.match-section{
+ display: flex;
+}
+.menu-section .menu{
+    height: 300px;
+    width: 200px;
+    padding: 10px 40px;
+    background-color: #161616;
+    border-radius: 10px;
+}
+.menu-section .menu a{
+    text-align: center; 
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px 25px;
+    color: #161616;
+    background-color: #FFFFFF;
+   
+}
+.menu-section .menu .filled-menu{
+    background-color: #FF7354;
+    color: #FFFFFF;
+}
+.matches{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 70px;
+    grid-row-gap: 70px;
+    margin-left: 70px;
+}
+.matches .match{
+    border: 1px solid #E8E8E8;
+    border-radius: 12px;
+    padding-bottom: 20px;
+    padding: 40px 20px;
+}
+.matches .match .flags{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.matches .match .flags span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.matches .match .match-info{
+    text-align: center;
+    margin-top: 20px;
+}
+.matches .match .match-info .match-time{
+    color: #4D4D4D;
+    font-size: 20px;
+    font-weight: 100;
+}
+.match-section .view-button{
+    display: none;
+}
+/* ---------Match Section End------------ */
+
+/* --------- Footer Area Start ---------- */
+.footer-area{
+    background-color: #161616;
+    margin-top: 100px;
+    margin-bottom: auto;
+    padding: 100px 0;
+}
+.footer-area .top-area{
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 50px;
+}
+hr{
+    border: 1px solid #2C2C2C;
+}
+.footer-area .bottom-area{
+   text-align: center;
+    margin-top: 50px;
+}
+
+.footer-area .bottom-area a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 60px;
+}
+.social-area{
+    text-align: center;
+    font-size: 40px;
+}
+.social-area i{
+    color: #cfc8c8;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+/* ------- Footer Area End --------- */
+
+/* -----Media Screen Small Device Start-----*/
+@media only screen and (max-width:767px){
+    .container{
+        width: 100%;
+       margin-top: 10px;
+    }
+    .banner-area{
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-area .banner-info{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .banner-area .banner-info .banner-title{
+        text-align: center;
+        font-size: 18px;
+    }
+    .banner-area .banner-info .banner-article{
+        text-align: center;
+        font-size: 10px;
+    }
+    .banner-area .banner-info .button-area{
+        text-align: center;
+    }
+    .banner-area .banner-info .button-area button{
+        font-size: 15px;
+        font-weight: 300;
+        padding: 10px 30px;
+        
+    }
+    .banner-image{
+        
+        margin-top: -80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner-image img{
+        height: 300px;
+      width: 100%;
+    }
+    .match-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .match-section .menu-section .menu{
+        background-color: transparent;
+        margin: auto;
+    }
+    .match-section .menu-section .menu a{
+        border: 1px solid #cfc8c8;
+        text-align: center;
+    }
+    .match-section .matches{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .match-section .view-button{
+        display: none;
+    }
+    .footer-area .bottom-area{
+        display: flex;
+        flex-direction: column;
+        margin-left: -50px;
+    }
+    .footer-area .bottom-area a{
+        margin-bottom: 30px;
+        font-weight: 100;
+    }
+}
+/* ------Media Screen Small Device End------- */
+
+/* -----Media Screen Medium Device Start----- */
+@media only screen and (min-width:768px) and (max-width:1023px){
+ .container{
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+ .banner-area .banner-info{
+    margin-left: 60px;
+ }
+ .banner-area .banner-info .banner-title{
+    font-size: 20px
+ }
+ .banner-image{
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .banner-image img{
+    height: 300px;
+ }
+ .match-section{
+    display: flex;
+    flex-direction: column;
+}
+.match-section .menu-section .menu{
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    height: 140px;
+    width: 100%;
+    padding: 0;
+    justify-content: center; 
+}
+.match-section .menu-section .menu a{
+    border:1px solid #cac5c5;
+    margin-left: 10px;
+}
+.match-section .matches{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: auto;
+    margin-right: auto;
+}
+.match-section .view-button{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+.match-section .view-button button{
+    padding: 15px 40px;
+    background-color: #DD0000;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-area .bottom-area{
+    display: inline-block;
+    
+}
+.footer-area .bottom-area a{
+    margin-left: 65px;
+}
+}   
+/*-----Media Screen Medium Device End-----*/
